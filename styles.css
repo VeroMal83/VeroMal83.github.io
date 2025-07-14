@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Deep black with warmth */
+    color: #e0e0e0; /* Softer off-white for readability */
+    font-family: 'EB Garamond', serif; /* Classy serif */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto+Mono&display=swap');
+
+header {
+    background: #000; /* Match the banner background */
+    padding-top: 20px;
+}
+
+.logo-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #000; /* Dark, but not pure black */
+    border-radius: 12px;
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.05);
+    position: relative;
+    font-size: 1.1em;
+    line-height: 1.7em;
+}
+
+h1, h2 {
+    font-family: 'Roboto Mono', monospace;
+    color: #bfa76f; /* Soft gold, not screaming yellow */
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-family: 'EB Garamond', serif;
+    color: #ccc;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 14px;
+}
+
+a {
+    color: #aaa;
+    text-decoration: none;
+    border-bottom: 1px dotted #666;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #d4af37;
+    border-bottom: 1px solid #d4af37;
+}
+
+.lang-switch {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+.lang-switch a {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9em;
+    color: #d4af37;
+    text-decoration: none;
+    border-bottom: 1px dashed #d4af37;
+}
+
+.lang-switch a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+@media (max-width: 768px) {
+    .container, .logo-container {
+        padding: 20px;
+    }
+
+    .lang-switch {
+        top: 20px;
+        right: 20px;
+    }
+}
+
