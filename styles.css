@@ -8,6 +8,42 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto+Mono&display=swap');
 
+/* ===== Footer Links ===== */
+.vm-footer-links .container {
+    padding: 20px 40px;
+    background-color: #000; /* match your dark containers */
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.05);
+}
+
+.vm-footer-links {
+    margin: 60px 0 40px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.vm-footer-links a {
+    font-family: 'Roboto Mono', monospace;
+    color: #aaa;
+    text-decoration: none;
+    border-bottom: 1px dotted #666;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.vm-footer-links a:hover {
+    color: #bfa76f;  /* Soft gold hover */
+    border-bottom: 1px solid #bfa76f;
+}
+
+@media (max-width: 768px) {
+    .vm-footer-links {
+        font-size: 0.85em;
+        margin: 40px 0 30px;
+    }
+}
+
+
 header {
     background: #000; /* Match the banner background */
     padding-top: 20px;
