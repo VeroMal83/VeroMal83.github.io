@@ -1,13 +1,8 @@
 User-agent: *
-Disallow: /indexesp.html
 Disallow: /private/
 Disallow: /ledger/
 Disallow: /tmp/
 Allow: /
-
-# Keep cryptocurrency and private intel out of crawlers
-Noindex: /indexesp.html
-Noindex: /ledger/
 
 Sitemap: https://malikvero.com/sitemap.xml
 
