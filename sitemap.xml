@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://USERNAME.github.io/REPO/consultation.html.html</loc></url>
-  <url><loc>https://USERNAME.github.io/REPO/consultationesp.html.html</loc></url>
-  <url><loc>https://USERNAME.github.io/REPO/consultationfr.html.html</loc></url>
-  <url><loc>https://USERNAME.github.io/REPO/index.html.html</loc></url>
-  <url><loc>https://USERNAME.github.io/REPO/indexesp.html.html</loc></url>
-  <url><loc>https://USERNAME.github.io/REPO/indexfr.html.html</loc></url>
+  <url><loc>https://USERNAME.github.io/REPO/consultation.html</loc></url>
+  <url><loc>https://USERNAME.github.io/REPO/consultationesp.html</loc></url>
+  <url><loc>https://USERNAME.github.io/REPO/consultationfr.html</loc></url>
+  <url><loc>https://USERNAME.github.io/REPO/index.html</loc></url>
+  <url><loc>https://USERNAME.github.io/REPO/indexesp.html</loc></url>
+  <url><loc>https://USERNAME.github.io/REPO/indexfr.html</loc></url>
 </urlset>
