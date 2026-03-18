@@ -59,29 +59,55 @@
         full configuration ownership transferred to the client.
     </p>
 
-    <h2>Core Services</h2>
-    <ul>
-        <li>
-            <strong>Custom Linux System Image Engineering:</strong>
-            Purpose-built Linux images with hardened baselines, minimal service footprint,
-            secure access configuration, and integrity verification.
-        </li>
-        <li>
-            <strong>Linux Firewall & Network Gateway Engineering:</strong>
-            Client-controlled Linux-based firewall and routing systems providing traffic control,
-            segmentation, and local visibility without mandatory cloud dependencies.
-        </li>
-        <li>
-            <strong>System Hardening & Reliability Review:</strong>
-            Practical hardening, logging, SELinux enforcement, patch strategy review,
-            and backup validation aligned with how systems are actually used.
-        </li>
-        <li>
-            <strong>Custom Linux Workstations:</strong>
-            Privacy-conscious, vendor-neutral Linux workstations designed for stability,
-            longevity, and predictable maintenance.
-        </li>
-    </ul>
+<h2>Core Services</h2>
+<ul>
+    <li>
+        <strong>Custom Linux System Image Engineering:</strong>
+        Purpose-built RHEL-based systems with hardened baselines, minimal service footprint,
+        and reproducible configuration. Includes SELinux policy normalization, removal of
+        local policy drift, controlled boolean enforcement, and custom policy modules where
+        required to maintain enforcing mode without functional breakage.
+    </li>
+
+    <li>
+        <strong>Linux Firewall & Network Control Systems:</strong>
+        Client-controlled Linux-based firewall and routing systems providing segmentation,
+        traffic inspection, and predictable network behavior. Includes hardened sysctl
+        networking parameters (redirect suppression, SYN flood mitigation, source route
+        disabling) and integration with IDS tooling for baseline detection validation.
+    </li>
+
+    <li>
+        <strong>System Hardening & Attack Surface Reduction:</strong>
+        Direct reduction of exploitable system components through kernel and service-level
+        controls. Includes disabling unused kernel modules and protocols (e.g. SCTP, DCCP,
+        TIPC), filesystem restriction (cramfs, udf, hfs), service masking (e.g. Bluetooth),
+        and package exclusion policies to prevent unnecessary software exposure.
+    </li>
+
+    <li>
+        <strong>Authentication & Access Control Enforcement:</strong>
+        Hardening of authentication paths to eliminate weak access conditions. Includes
+        PAM policy enforcement (removal of null password acceptance), ptrace restriction,
+        dmesg access control, and alignment with CIS/OpenSCAP guidance for controlled
+        privilege boundaries.
+    </li>
+
+    <li>
+        <strong>Logging, Audit, and Failure Containment:</strong>
+        Structured logging and audit configuration designed to preserve system visibility
+        under failure conditions. Includes journald constraints (disk usage limits,
+        compression, retention control), elimination of redundant log forwarding, and
+        audit-aligned configuration tracking for change verification.
+    </li>
+
+    <li>
+        <strong>Custom Linux Workstations:</strong>
+        Hardened, vendor-neutral systems designed for long-term operability. Systems are
+        delivered with controlled update paths, reduced package surface (e.g. exclusion of
+        unused network services), and full configuration transparency for client ownership.
+    </li>
+</ul>
 
     <h2>Operating Principles</h2>
     <ul>
